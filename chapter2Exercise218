@@ -1,0 +1,27 @@
+/*
+(Print a table) Write a program that displays the following table. Cast floatingpoint
+numbers into integers.
+a 		b 		pow(a, b)
+1 		2 		1
+2 		3 		8
+3 		4 		81
+4 		5 		1024
+5 		6 		15625
+*/
+package chapter2;
+
+public class Exercise218 {
+
+	public static void main(String[] args) {
+		float a, b;
+		System.out.println("a     b    pow(a, b)");
+		a = 1;
+		b = 2;
+
+		for (int i = 1; i <= 5; i++) {
+
+			System.out.println((int) i + "     " + (int) (i + 1) + "    " + (int) Math.pow(i, i + 1));
+
+		}
+	}
+}
